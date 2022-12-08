@@ -13,9 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script type="text/javascript">
-      function printpdf() 
+      function printColorpdf() 
       {
-      myWindow=window.open("Print-Test-Pages.pdf");
+      myWindow=window.open("Color-Printer-Test-Page.pdf");
+      myWindow.close;
+      }
+      function printBlackWhitepdf() 
+      {
+      myWindow=window.open("Black-and-White-Printer-Test-Page.pdf");
       myWindow.close;
       }
       </script>
@@ -55,9 +60,9 @@
     <div style="padding-left:20px">
       <h1 class="title is-1">Print Test Pages</h1><br>
       <p>These buttons will let you print a Color Printer Test Page, Black and White Test Page, or a CMYK Test Page.</p><br>
-      <button onclick="printpdf()" class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button class="button is-primary is-large">Color Printer Test Page</button><br><br>
-      <button class="button is-warning is-large">CMYK Printer Test Page</button>
+      <button onclick="printBlackWhitepdf()" class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button onclick="printColorpdf()" class="button is-primary is-large">Color Printer Test Page</button><br><br>
+      <button onclick="printColorpdf()" class="button is-warning is-large">CMYK Printer Test Page</button>
       <br><br>
       <h2 class="title is-2">What does this website do?</h2>
       <p>This website has buttons that let you print test pages for testing your printers. This website hosts a color printer test page, black and white printer test page and a CMYK test page for all your printing needs. </p>
