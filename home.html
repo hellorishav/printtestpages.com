@@ -11,31 +11,45 @@
     <meta name="revisit-after" content="3 days">
     <meta property="og:image" content="https://printtestpages.com/assets/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://rishavkumar.io/styles.css">
-    <script src="https://kit.fontawesome.com/54d31b2d0e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
-    html {
-        font-family:courier, courier new, serif;
-    }
+
+      div#Header {
+          padding: 0.5% 0.5%;
+          overflow: hidden;
+          box-shadow: 5px 0px 5px #000000;
+      }
+      div#Footer {
+          position: absolute;
+          overflow: hidden;
+          width: 100%;
+          bottom: 0px;
+          height: 4%;
+          padding-top: 0.5%;
+          text-align: center;
+          font-size: 1.2em;
+      }
+      div#Header, div#Footer {
+          background-color: #d0d0d0;
+      }
+      p {
+        font-size: 1.6em;
+      }
     </style>
     </head>
-    <body>
 
-      <nav class="navbar is-primary">
-        <!-- navbar brand, navbar menu... -->
-        <div align="center" class="navbar-brand">
-          <a href="#default" align="center" class="logo"><img src="assets/icon.png" alt="Print a Test Page" style="width:75px;float:left;">
-            <b><p align="center" class="title is-1" style="font-size: 30px; padding-top: 15px !important; float:left;overflow:auto;">Print Test Pages .com</p></b></a>    
-        </div>
-      </nav>
+    <div align="center" id="Header">
+			<img style="padding-top: 10px;width:350px;display:inline-block;" alt="Print test pages logo" src="assets/print-test-pages.png">
+    </div>
+    <body>
 
     <section align="center" class="section">
     
     <div style="padding-left:20px">
       <h1 class="title is-1">Print Test Pages</h1><br>
-      <p>These buttons will let you print a Color Printer Test Page, Black and White Test Page, or a CMYK Test Page.</p>
-      <button class="button is-dark is-large">Black and White Printer Test Page</button>
-      <button class="button is-primary is-large">Color Printer Test Page</button>
+      <p>These buttons will let you print a Color Printer Test Page, Black and White Test Page, or a CMYK Test Page.</p><br>
+      <button class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="button is-primary is-large">Color Printer Test Page</button><br><br>
       <button class="button is-warning is-large">CMYK Printer Test Page</button>
       <br><br>
       <h2 class="title is-2">What does this website do?</h2>
@@ -45,5 +59,10 @@
     </section>
     
     </body>
+
+    <div id="Footer">
+      © PrintTestPages.com . All rights reserved.
+    </div>
+
     </html>
     
