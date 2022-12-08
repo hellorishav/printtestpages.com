@@ -12,13 +12,8 @@
     <meta property="og:image" content="https://printtestpages.com/assets/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <script type="text/javascript">
-      function printpdf() 
-      {
-      myWindow=window.open("Print-Test-Pages.pdf");
-      myWindow.close;
-      }
-      </script>
+    <script src="print.js"></script>
+    <link rel="stylesheet" type="text/css" href="print.css">
     <style>
 
       div#Header {
@@ -55,7 +50,7 @@
     <div style="padding-left:20px">
       <h1 class="title is-1">Print Test Pages</h1><br>
       <p>These buttons will let you print a Color Printer Test Page, Black and White Test Page, or a CMYK Test Page.</p><br>
-      <button onclick="printpdf()" class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button oonclick="printJS({printable:'Print-Test-Pages.pdf', type:'pdf', showModal:true})" class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button class="button is-primary is-large">Color Printer Test Page</button><br><br>
       <button class="button is-warning is-large">CMYK Printer Test Page</button>
       <br><br>
