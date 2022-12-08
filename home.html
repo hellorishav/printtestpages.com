@@ -23,6 +23,11 @@
       myWindow=window.open("Black-and-White-Printer-Test-Page.pdf");
       myWindow.close;
       }
+      function printCMYKpdf() 
+      {
+      myWindow=window.open("CMYK-Print-Test-Page.pdf");
+      myWindow.close;
+      }
       </script>
     <style>
 
@@ -62,7 +67,7 @@
       <p>These buttons will let you print a Color Printer Test Page, Black and White Test Page, or a CMYK Test Page.</p><br>
       <button onclick="printBlackWhitepdf()" class="button is-dark is-large">Black and White Printer Test Page</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button onclick="printColorpdf()" class="button is-primary is-large">Color Printer Test Page</button><br><br>
-      <button onclick="printColorpdf()" class="button is-warning is-large">CMYK Printer Test Page</button>
+      <button onclick="printCMYKpdf() " class="button is-warning is-large">CMYK Printer Test Page</button>
       <br><br>
       <h2 class="title is-2">What does this website do?</h2>
       <p>This website has buttons that let you print test pages for testing your printers. This website hosts a color printer test page, black and white printer test page and a CMYK test page for all your printing needs. </p>
